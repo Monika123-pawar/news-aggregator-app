@@ -1,5 +1,43 @@
 $body-color: blue;
 
 body {
-  color: $body-color;
+}
+* {
+  // background-color: rgba(12, 11, 11, 0.904);
+  box-sizing: border-box;
+}
+#search {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  //  background-color: rgba(12, 11, 11, 0.904) ;
+}
+
+#news-container {
+  width: 40%;
+  height: 30%;
+  margin: 2%;
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
+  flex-direction: column;
+}
+li {
+  text-decoration: none;
+}
+.article-img {
+  width:100%;
+  border-radius: 10px;
+}
+.article-title {
+  font-size: small;
+}
+.article-author,
+.article-link {
+  align-self: flex-end;
 }
