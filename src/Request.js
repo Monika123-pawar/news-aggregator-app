@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
             });
             display.innerHTML = newsHtml;
             if (data.articles.length === 0) {
-                document.getElementById('msg').innerHTML = "No article was found based on the search";
+                document.getElementById('msg').innerHTML ="-No article was found based on the search.";
                 e.preventDefault();
               }
         };
