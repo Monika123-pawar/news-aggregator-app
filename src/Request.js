@@ -18,14 +18,16 @@ window.addEventListener("load", () => {
             let newsHtml = "";
             data.articles.map(function (article) {
                 let news = ` 
-             <div  id="news-container">
+             <div id="news-container">
              
-             <ul  id="news-articles">
-             <li class="article"><img  class="article-img" src="${article.urlToImage}" alt="article-img"></li>
-             <li class="article"><h2 class="article-title">${article.title}</h2></li>
-             <li class="article"><p  class="article-description">${article.description}</p></li>
-            <li class="article"><span class="article-author">${article.author}</span></li>
-             <li class="article"><a   class="article-link" href="${article.url}" target="_blank">see more</a></li>
+             <ul id="news-articles">
+             <li class="article">
+             <img class="article-img" src="${article.urlToImage}" alt="article-img">
+             <h2 class="article-title">${article.title}</h2>
+             <p class="article-description">${article.description}</p>
+            <span class="article-author">${article.author}</span>
+            <a class="article-link" href="${article.url}" target="_blank">see more</a>
+            </li>
              </ul>
            
              </div>
@@ -34,7 +36,7 @@ window.addEventListener("load", () => {
             });
             display.innerHTML = newsHtml;
             if (data.articles.length === 0) {
-                document.getElementById('msg').innerHTML = "No article was found based on the search.";
+                document.getElementById('msg').innerHTML = "No article was found based on the search";
                 e.preventDefault();
               }
         };

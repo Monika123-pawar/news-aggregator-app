@@ -159,10 +159,15 @@ margin: 5vh;
 .article-description{
   padding: 1vh;
 }
+.article-author{
+  display: block;
+}
 .article-link {
   text-decoration: none;
   text-align: center;
   color: rgba(67, 67, 173, 0.842);
+  display: block;
+  text-align: right;
 }
 .not-found{
   color: red;
