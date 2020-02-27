@@ -81,5 +81,6 @@ window.addEventListener("load", () => {
         
         toggleSwitch.addEventListener('change', switchTheme, false);
     
+    
     });
     
