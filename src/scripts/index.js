@@ -15,13 +15,11 @@ window.addEventListener("load", () => {
             const data = await response.json();
             console.log(data);
     
-            let display = document.getElementById('main-news-container');
+            let display = document.getElementById('news-container');
             let newsHtml = "";
             data.articles.map(function (article) {
                 let news = ` 
-             <div id="news-container">
-             
-             <ul id="news-articles">
+        <ul id="news-articles">
              <li class="article">
              <img class="article-img" src="${article.urlToImage}" alt="article-img">
              <h2 class="article-title">${article.title}</h2>
@@ -30,8 +28,6 @@ window.addEventListener("load", () => {
             <a class="article-link" href="${article.url}" target="_blank">see more</a>
              </li>
              </ul>
-           
-             </div>
                `;
                 newsHtml += news;
             });
