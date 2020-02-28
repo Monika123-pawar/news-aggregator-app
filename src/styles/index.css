@@ -188,6 +188,7 @@ body {
 
 .article-author {
   display: block;
+  margin: 1vh;
 }
 
 .article-link {
@@ -196,6 +197,7 @@ body {
   color: rgba(67, 67, 173, 0.842);
   display: block;
   text-align: right;
+  margin: 1vh;
 }
 
 .not-found {

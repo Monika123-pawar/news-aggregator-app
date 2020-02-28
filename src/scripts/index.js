@@ -1,8 +1,6 @@
+import '../styles/index.css';
 
 window.addEventListener("load", () => {
-// import '../styles/index.css';
-
-
     let input= document.getElementById('search');
     input.addEventListener('keyup', (e) => {
         if (e.keyCode === 13) {
@@ -24,11 +22,13 @@ window.addEventListener("load", () => {
              <div id="news-container">
              
              <ul id="news-articles">
-             <li class="article"><img class="article-img" src="${article.urlToImage}" alt="article-img"></li>
-             <li class="article"> <h2 class="article-title">${article.title}</h2></li>
-             <li class="article"><p class="article-description">${article.description}</p></li>
-             <li class="article"><span class="article-author">${article.author}</span></li>
-             <li class="article"><a class="article-link" href="${article.url}" target="_blank">see more</a></li>
+             <li class="article">
+             <img class="article-img" src="${article.urlToImage}" alt="article-img">
+             <h2 class="article-title">${article.title}</h2>
+            <p class="article-description">${article.description}</p>
+            <span class="article-author">${article.author}</span>
+            <a class="article-link" href="${article.url}" target="_blank">see more</a>
+             </li>
              </ul>
            
              </div>
@@ -82,17 +82,5 @@ window.addEventListener("load", () => {
         
         toggleSwitch.addEventListener('change', switchTheme, false);
     
-        addCSS('style.css');
-
-        // Include CSS file
-        function addCSS(index){
-         var head = document.getElementsByTagName('head')[0];
-        
-         var style = document.createElement('link');
-         style.href = filename;
-         style.type = 'text/css';
-         style.rel = 'stylesheet';
-         head.append(style);
-        }
     });
     
