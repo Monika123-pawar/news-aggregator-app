@@ -1,4 +1,7 @@
+
 window.addEventListener("load", () => {
+// import '../styles/index.css';
+
 
     let input= document.getElementById('search');
     input.addEventListener('keyup', (e) => {
@@ -81,6 +84,17 @@ window.addEventListener("load", () => {
         
         toggleSwitch.addEventListener('change', switchTheme, false);
     
-    
+        addCSS('style.css');
+
+        // Include CSS file
+        function addCSS(index){
+         var head = document.getElementsByTagName('head')[0];
+        
+         var style = document.createElement('link');
+         style.href = filename;
+         style.type = 'text/css';
+         style.rel = 'stylesheet';
+         head.append(style);
+        }
     });
     
