@@ -1,4 +1,4 @@
-import '../styles/index.css';
+// import '../styles/index.css';
 
 window.addEventListener("load", () => {
     let input = document.getElementById('search');
